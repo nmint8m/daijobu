@@ -7,3 +7,5 @@ Struggling while developing iOS application? #everythingisdaijobu This is magic 
 1. [When do we know the animation of pushing new view controller ends?](https://github.com/nmint8m/daijobu/blob/master/PushViewControllerCompletion.md)
 
 2. [Custom task alongside pushing animation](https://github.com/nmint8m/daijobu/blob/master/PushViewControllerCompletion.md)
+
+3. [Bug UITextView scroll to top when tap enter](https://github.com/nmint8m/daijobu/blob/master/BugUITextViewScrollToTopWhenTapEnter.md)
