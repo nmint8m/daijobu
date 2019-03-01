@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DecreaseFontSizeOfButtonsVC" customModule="Daijobu" customModuleProvider="target">
+            <connections>
+                <outlet property="atkButton" destination="wtm-7X-55L" id="aSl-HB-2PL"/>
+                <outlet property="atkTextField" destination="oPY-DX-nWQ" id="UKB-dS-eQS"/>
+                <outlet property="hpButton" destination="aaD-HM-pub" id="Ur4-6d-CJg"/>
+                <outlet property="hpTextField" destination="cC7-IS-Edp" id="o8b-JB-gQB"/>
+                <outlet property="nameButton" destination="iWm-8n-w5K" id="9Wf-Sa-HDP"/>
+                <outlet property="nameTextField" destination="U7v-yw-7KI" id="J2a-HP-LSA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-ocean" translatesAutoresizingMaskIntoConstraints="NO" id="sEa-I9-idw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdw-So-fuy">
+                    <rect key="frame" x="320" y="20" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="uzl-n9-NKW"/>
+                        <constraint firstAttribute="width" constant="40" id="vQg-RO-9DQ"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="img-delete-sign"/>
+                    <connections>
+                        <action selector="closeBtnTouchUpInside:" destination="-1" eventType="touchUpInside" id="YCw-w8-Y7N"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfy-un-mGT">
+                    <rect key="frame" x="50" y="80" width="275" height="260"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-meme-yaoming" translatesAutoresizingMaskIntoConstraints="NO" id="qpz-JW-Q90">
+                            <rect key="frame" x="10" y="10" width="255" height="191.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="qpz-JW-Q90" secondAttribute="height" multiplier="4:3" id="NYy-hV-SeM"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wIU-ON-2FW">
+                            <rect key="frame" x="15" y="216.5" width="245" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-8n-w5K">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="Name">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtm-7X-55L">
+                                    <rect key="frame" x="115" y="0.0" width="61" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="ATK" image="img-explosion-filled">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaD-HM-pub">
+                                    <rect key="frame" x="191" y="0.0" width="54" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="HP" image="img-hearts-filled">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="5I3-RO-OQm"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="wIU-ON-2FW" firstAttribute="leading" secondItem="dfy-un-mGT" secondAttribute="leading" constant="15" id="9h7-NA-uvI"/>
+                        <constraint firstAttribute="trailing" secondItem="wIU-ON-2FW" secondAttribute="trailing" constant="15" id="MVc-UB-hBe"/>
+                        <constraint firstItem="qpz-JW-Q90" firstAttribute="leading" secondItem="dfy-un-mGT" secondAttribute="leading" constant="10" id="gvj-Vw-srn"/>
+                        <constraint firstItem="wIU-ON-2FW" firstAttribute="top" secondItem="qpz-JW-Q90" secondAttribute="bottom" constant="15" id="io5-2b-dpg"/>
+                        <constraint firstItem="qpz-JW-Q90" firstAttribute="top" secondItem="dfy-un-mGT" secondAttribute="top" constant="10" id="pfQ-HK-COM"/>
+                        <constraint firstAttribute="trailing" secondItem="qpz-JW-Q90" secondAttribute="trailing" constant="10" id="qvH-XP-Qx7"/>
+                        <constraint firstAttribute="height" constant="260" id="v3t-9S-khW"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RtX-C4-mhN">
+                    <rect key="frame" x="50" y="360" width="275" height="135"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U7v-yw-7KI">
+                            <rect key="frame" x="0.0" y="0.0" width="275" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ATK" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oPY-DX-nWQ">
+                            <rect key="frame" x="0.0" y="35" width="275" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cC7-IS-Edp">
+                            <rect key="frame" x="0.0" y="70" width="275" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdP-kB-xzl">
+                            <rect key="frame" x="0.0" y="105" width="275" height="30"/>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Apply">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="qdP-kB-xzl" firstAttribute="width" secondItem="RtX-C4-mhN" secondAttribute="width" id="6Na-hR-6CC"/>
+                        <constraint firstItem="oPY-DX-nWQ" firstAttribute="width" secondItem="RtX-C4-mhN" secondAttribute="width" id="QV6-4p-xmI"/>
+                        <constraint firstItem="cC7-IS-Edp" firstAttribute="width" secondItem="RtX-C4-mhN" secondAttribute="width" id="rch-n1-tym"/>
+                        <constraint firstItem="U7v-yw-7KI" firstAttribute="width" secondItem="RtX-C4-mhN" secondAttribute="width" id="wil-r8-v90"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RtX-C4-mhN" secondAttribute="trailing" constant="50" id="0Pi-ne-LZv"/>
+                <constraint firstItem="RtX-C4-mhN" firstAttribute="top" secondItem="dfy-un-mGT" secondAttribute="bottom" constant="20" id="0p5-Vj-tXJ"/>
+                <constraint firstItem="sEa-I9-idw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0xl-TH-c03"/>
+                <constraint firstItem="RtX-C4-mhN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="Ake-he-oUA"/>
+                <constraint firstItem="sEa-I9-idw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Avs-4E-tRc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zdw-So-fuy" secondAttribute="trailing" constant="15" id="CM7-FL-qdf"/>
+                <constraint firstItem="dfy-un-mGT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="HvX-mD-Xya"/>
+                <constraint firstItem="dfy-un-mGT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="I0Q-QI-WDh"/>
+                <constraint firstItem="zdw-So-fuy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Ia6-nQ-7j0"/>
+                <constraint firstAttribute="trailing" secondItem="sEa-I9-idw" secondAttribute="trailing" id="MTw-RN-WmO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dfy-un-mGT" secondAttribute="trailing" constant="50" id="kjW-oC-ayG"/>
+                <constraint firstAttribute="bottom" secondItem="sEa-I9-idw" secondAttribute="bottom" id="tCR-cc-bVi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="130.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img-delete-sign" width="33" height="33"/>
+        <image name="img-explosion-filled" width="33" height="33"/>
+        <image name="img-hearts-filled" width="33" height="33"/>
+        <image name="img-meme-yaoming" width="512" height="512"/>
+        <image name="img-ocean" width="640" height="1136"/>
+    </resources>
+</document>
