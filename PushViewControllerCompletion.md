@@ -88,9 +88,9 @@ extension NaviPushCompletionVC2: UINavigationControllerDelegate {
 
 
 
-#### Bên cạnh đó
+## Custom task alongside pushing animation
 
-Nếu chúng mình muốn làm một số thứ màu mè trong suốt quá trình transition (push/pop view controller) thì giải pháp đây:
+Bên cạnh đó, nếu chúng mình muốn làm một số thứ màu mè trong suốt quá trình transition (push/pop view controller) thì giải pháp đây:
 
 Sử dụng `transitionCoordinator`:
 
