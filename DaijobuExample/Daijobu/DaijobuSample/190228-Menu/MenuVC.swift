@@ -35,7 +35,7 @@ extension MenuVC: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return Section.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -61,26 +61,50 @@ extension MenuVC: UITableViewDataSource, UITableViewDelegate {
             present(navi, animated: true, completion: nil)
 
         case .navigationPushAlongSideTransition:
-            // MARK - 181017-NaviPushAlongsideTransition
+            // MARK: - 181017-NaviPushAlongsideTransition
             let vc = NaviPushAlongsideTransitionCompletionVC()
             let navi = UINavigationController(rootViewController: vc)
             present(navi, animated: true, completion: nil)
+
+        case .decreaseFontSizeOfMultipleLabels:
+            // MARK: - 190301-DecreaseFontSizeOfLabels
+            let vc = DecreaseFontSizeOfLabelsVC()
+            present(vc, animated: true, completion: nil)
+
+        case .decreaseFontSizeOfMultipleButtons:
+            // MARK: - 190301-DecreaseFontSizeOfButtons
+            let vc = DecreaseFontSizeOfButtonsVC()
+            present(vc, animated: true, completion: nil)
         }
     }
 }
 
 extension MenuVC {
-    enum Section: Int {
+    enum Section: Int, CaseIterable {
         case navigationPushCompletion1
         case navigationPushCompletion2
         case navigationPushAlongSideTransition
+        case decreaseFontSizeOfMultipleLabels
+        case decreaseFontSizeOfMultipleButtons
 
         var title: String {
             switch self {
-            case .navigationPushCompletion1: return "Navigation Push Completion 1"
-            case .navigationPushCompletion2: return "Navigation Push Completion 2"
-            case .navigationPushAlongSideTransition: return "Navigation Push Along Side Transition"
+            case .navigationPushCompletion1:
+                return "Navigation Push Completion 1"
+            case .navigationPushCompletion2:
+                return "Navigation Push Completion 2"
+            case .navigationPushAlongSideTransition:
+                return "Navigation Push Along Side Transition"
+            case .decreaseFontSizeOfMultipleLabels:
+                return "Decrease Font Size Of Multiple Labels"
+            case .decreaseFontSizeOfMultipleButtons:
+                return "Decrease Font Size Of Multiple Buttons"
             }
+        }
+
+        static var count: Int {
+            return Section.allCases.count
         }
     }
 }
+

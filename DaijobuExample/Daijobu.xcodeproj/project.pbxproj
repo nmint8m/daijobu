@@ -21,6 +21,11 @@
 		229C11A22182C97500983A96 /* NaviPushCompletionNaviExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C11A12182C97500983A96 /* NaviPushCompletionNaviExt.swift */; };
 		229C11AB2182CBCE00983A96 /* NaviPushCompletionVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C11A92182CBCE00983A96 /* NaviPushCompletionVC1.swift */; };
 		229C11AC2182CBCE00983A96 /* NaviPushCompletionVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229C11AA2182CBCE00983A96 /* NaviPushCompletionVC1.xib */; };
+		22D68B572229A21E00C90F78 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D68B562229A21E00C90F78 /* StringExt.swift */; };
+		22F315EB22290FA9005336AF /* DecreaseFontSizeOfLabelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F315E922290FA9005336AF /* DecreaseFontSizeOfLabelsVC.swift */; };
+		22F315EC22290FA9005336AF /* DecreaseFontSizeOfLabelsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F315EA22290FA9005336AF /* DecreaseFontSizeOfLabelsVC.xib */; };
+		22F315EF22290FBC005336AF /* DecreaseFontSizeOfButtonsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F315ED22290FBC005336AF /* DecreaseFontSizeOfButtonsVC.swift */; };
+		22F315F022290FBC005336AF /* DecreaseFontSizeOfButtonsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F315EE22290FBC005336AF /* DecreaseFontSizeOfButtonsVC.xib */; };
 		22FB35732227DA3E0020D8DB /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB35712227DA3E0020D8DB /* MenuVC.swift */; };
 		22FB35742227DA3E0020D8DB /* MenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22FB35722227DA3E0020D8DB /* MenuVC.xib */; };
 /* End PBXBuildFile section */
@@ -63,6 +68,11 @@
 		229C11A12182C97500983A96 /* NaviPushCompletionNaviExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviPushCompletionNaviExt.swift; sourceTree = "<group>"; };
 		229C11A92182CBCE00983A96 /* NaviPushCompletionVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviPushCompletionVC1.swift; sourceTree = "<group>"; };
 		229C11AA2182CBCE00983A96 /* NaviPushCompletionVC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NaviPushCompletionVC1.xib; sourceTree = "<group>"; };
+		22D68B562229A21E00C90F78 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		22F315E922290FA9005336AF /* DecreaseFontSizeOfLabelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecreaseFontSizeOfLabelsVC.swift; sourceTree = "<group>"; };
+		22F315EA22290FA9005336AF /* DecreaseFontSizeOfLabelsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DecreaseFontSizeOfLabelsVC.xib; sourceTree = "<group>"; };
+		22F315ED22290FBC005336AF /* DecreaseFontSizeOfButtonsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecreaseFontSizeOfButtonsVC.swift; sourceTree = "<group>"; };
+		22F315EE22290FBC005336AF /* DecreaseFontSizeOfButtonsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DecreaseFontSizeOfButtonsVC.xib; sourceTree = "<group>"; };
 		22FB35712227DA3E0020D8DB /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		22FB35722227DA3E0020D8DB /* MenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				223A963B2182D5860013D262 /* UIViewControllerExt.swift */,
+				22D68B562229A21E00C90F78 /* StringExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -232,6 +243,7 @@
 				229C119E2182C8A800983A96 /* 181026-NaviPushCompletion */,
 				228C04712184711B00AA26B4 /* 181027-NaviPushAlongsideTransition */,
 				22FB35702227DA3E0020D8DB /* 190228-Menu */,
+				22F315E622290F17005336AF /* 190301-DecreaseFontSizeToTheSameSize */,
 			);
 			path = DaijobuSample;
 			sourceTree = "<group>";
@@ -253,6 +265,33 @@
 				228C046E218460FD00AA26B4 /* NaviPushCompletionVC2.xib */,
 			);
 			path = "181026-VC";
+			sourceTree = "<group>";
+		};
+		22F315E622290F17005336AF /* 190301-DecreaseFontSizeToTheSameSize */ = {
+			isa = PBXGroup;
+			children = (
+				22F315E722290F4B005336AF /* 190301-DecreaseFontSizeOfLabels */,
+				22F315E822290F5D005336AF /* 190301-DecreaseFontSizeOfButtons */,
+			);
+			path = "190301-DecreaseFontSizeToTheSameSize";
+			sourceTree = "<group>";
+		};
+		22F315E722290F4B005336AF /* 190301-DecreaseFontSizeOfLabels */ = {
+			isa = PBXGroup;
+			children = (
+				22F315E922290FA9005336AF /* DecreaseFontSizeOfLabelsVC.swift */,
+				22F315EA22290FA9005336AF /* DecreaseFontSizeOfLabelsVC.xib */,
+			);
+			path = "190301-DecreaseFontSizeOfLabels";
+			sourceTree = "<group>";
+		};
+		22F315E822290F5D005336AF /* 190301-DecreaseFontSizeOfButtons */ = {
+			isa = PBXGroup;
+			children = (
+				22F315ED22290FBC005336AF /* DecreaseFontSizeOfButtonsVC.swift */,
+				22F315EE22290FBC005336AF /* DecreaseFontSizeOfButtonsVC.xib */,
+			);
+			path = "190301-DecreaseFontSizeOfButtons";
 			sourceTree = "<group>";
 		};
 		22FB35702227DA3E0020D8DB /* 190228-Menu */ = {
@@ -368,11 +407,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F315EC22290FA9005336AF /* DecreaseFontSizeOfLabelsVC.xib in Resources */,
 				229C11AC2182CBCE00983A96 /* NaviPushCompletionVC1.xib in Resources */,
 				228C0470218460FD00AA26B4 /* NaviPushCompletionVC2.xib in Resources */,
 				2249575C218AC98000069909 /* NaviPushAlongsideTransitionCompletionVC.xib in Resources */,
 				225CFD212181B1DF00D277F8 /* Assets.xcassets in Resources */,
 				22FB35742227DA3E0020D8DB /* MenuVC.xib in Resources */,
+				22F315F022290FBC005336AF /* DecreaseFontSizeOfButtonsVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F315EF22290FBC005336AF /* DecreaseFontSizeOfButtonsVC.swift in Sources */,
 				228C04752184740900AA26B4 /* NaviPushAlongsideTransitionNaviExt.swift in Sources */,
 				223A963C2182D5860013D262 /* UIViewControllerExt.swift in Sources */,
 				229C11A22182C97500983A96 /* NaviPushCompletionNaviExt.swift in Sources */,
@@ -405,6 +447,8 @@
 				228C04772184743100AA26B4 /* NaviPushAlongsideTransitionCompletionVC.swift in Sources */,
 				225CFD1A2181B1DD00D277F8 /* AppDelegate.swift in Sources */,
 				228C046F218460FD00AA26B4 /* NaviPushCompletionVC2.swift in Sources */,
+				22F315EB22290FA9005336AF /* DecreaseFontSizeOfLabelsVC.swift in Sources */,
+				22D68B572229A21E00C90F78 /* StringExt.swift in Sources */,
 				22FB35732227DA3E0020D8DB /* MenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
