@@ -33,17 +33,16 @@ final class DecreaseFontSizeOfLabelsVC: UIViewController {
     }
 
     private func configDefaultLabels() {
-        configDefaultLabel(nameLabel, isHighPriority: false)
-        configDefaultLabel(atkLabel, isHighPriority: true)
-        configDefaultLabel(hpLabel, isHighPriority: true)
+        configDefaultLabel(nameLabel, priority: 250)
+        configDefaultLabel(atkLabel, priority: 251)
+        configDefaultLabel(hpLabel, priority: 252)
     }
 
-    private func configDefaultLabel(_ label: UILabel, isHighPriority: Bool) {
+    private func configDefaultLabel(_ label: UILabel, priority: Float) {
         label.font = Config.defaultFont
         label.numberOfLines = 1
         label.minimumScaleFactor = 0.5
-        label.setContentHuggingPriority(isHighPriority ? Config.highPrioryty : Config.lowPrioryty,
-                                        for: .horizontal)
+        label.setContentHuggingPriority(UILayoutPriority(priority), for: .horizontal)
     }
 
     // MARK: - IBActions
@@ -73,8 +72,6 @@ extension DecreaseFontSizeOfLabelsVC {
     struct Config {
         static let minimumFontScale: CGFloat = 0.5
         static let maximumFontScale: CGFloat = 1
-        static let highPrioryty = UILayoutPriority(252)
-        static let lowPrioryty = UILayoutPriority(250)
         static let defaultName = "Name"
         static let defaultATK = "ATK"
         static let defaultHP = "HP"
