@@ -24,6 +24,7 @@ final class DecreaseFontSizeOfLabelsVC: UIViewController {
         super.viewDidLoad()
         configDefaultStackView()
         configDefaultLabels()
+        configDefaultTextFields()
     }
 
     // MARK: - Functions
@@ -33,16 +34,23 @@ final class DecreaseFontSizeOfLabelsVC: UIViewController {
     }
 
     private func configDefaultLabels() {
-        configDefaultLabel(nameLabel, priority: 250)
-        configDefaultLabel(atkLabel, priority: 251)
-        configDefaultLabel(hpLabel, priority: 252)
+        configDefaultLabel(nameLabel, huggingPriority: 250)
+        configDefaultLabel(atkLabel, huggingPriority: 251)
+        configDefaultLabel(hpLabel, huggingPriority: 252)
     }
 
-    private func configDefaultLabel(_ label: UILabel, priority: Float) {
+    private func configDefaultLabel(_ label: UILabel, huggingPriority: Float) {
         label.font = Config.defaultFont
+        label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 1
         label.minimumScaleFactor = 0.5
-        label.setContentHuggingPriority(UILayoutPriority(priority), for: .horizontal)
+        label.setContentHuggingPriority(UILayoutPriority(huggingPriority), for: .horizontal)
+    }
+
+    private func configDefaultTextFields() {
+        nameTextField.delegate = self
+        atkTextField.delegate = self
+        hpTextField.delegate = self
     }
 
     // MARK: - IBActions
@@ -51,9 +59,14 @@ final class DecreaseFontSizeOfLabelsVC: UIViewController {
     }
 
     @IBAction func applyBtnTouchUpInside(_ sender: Any) {
-        let name: String = nameTextField.text ?? Config.defaultName
-        let atk: String = atkTextField.text ?? Config.defaultATK
-        let hp: String = hpTextField.text ?? Config.defaultHP
+        var name: String = nameTextField.text ?? Config.defaultName
+        name = name.trimmed.isEmpty ? Config.defaultName : name
+
+        var atk: String = atkTextField.text ?? Config.defaultATK
+        atk = atk.trimmed.isEmpty ? Config.defaultATK : atk
+
+        var hp: String = hpTextField.text ?? Config.defaultHP
+        hp = hp.trimmed.isEmpty ? Config.defaultHP : hp
 
         nameLabel.text = name
         atkLabel.text = atk
@@ -68,6 +81,7 @@ final class DecreaseFontSizeOfLabelsVC: UIViewController {
     }
 }
 
+// MARK: - Config
 extension DecreaseFontSizeOfLabelsVC {
     struct Config {
         static let minimumFontScale: CGFloat = 0.5
@@ -77,5 +91,13 @@ extension DecreaseFontSizeOfLabelsVC {
         static let defaultHP = "HP"
         static let defaultFont = UIFont.systemFont(ofSize: 15)
         static let stackViewSpacing: CGFloat = 10
+    }
+}
+
+// MARK: - UITextFieldDelegate
+extension DecreaseFontSizeOfLabelsVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.endEditing(true)
+        return true
     }
 }
