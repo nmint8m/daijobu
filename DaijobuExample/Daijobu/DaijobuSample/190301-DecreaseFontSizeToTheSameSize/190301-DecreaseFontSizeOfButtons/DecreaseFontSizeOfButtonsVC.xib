@@ -12,9 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DecreaseFontSizeOfButtonsVC" customModule="Daijobu" customModuleProvider="target">
             <connections>
-                <outlet property="atkButton" destination="wtm-7X-55L" id="aSl-HB-2PL"/>
+                <outlet property="atkButton" destination="9OT-ij-QD9" id="4bI-uQ-tN7"/>
                 <outlet property="atkTextField" destination="oPY-DX-nWQ" id="UKB-dS-eQS"/>
-                <outlet property="hpButton" destination="aaD-HM-pub" id="Ur4-6d-CJg"/>
+                <outlet property="buttonsContainerView" destination="row-aZ-j8y" id="AE3-ir-j4q"/>
+                <outlet property="hpButton" destination="Xdi-Fe-dch" id="cWJ-E1-M8s"/>
                 <outlet property="hpTextField" destination="cC7-IS-Edp" id="o8b-JB-gQB"/>
                 <outlet property="nameButton" destination="iWm-8n-w5K" id="9Wf-Sa-HDP"/>
                 <outlet property="nameTextField" destination="U7v-yw-7KI" id="J2a-HP-LSA"/>
@@ -50,46 +51,62 @@
                                 <constraint firstAttribute="width" secondItem="qpz-JW-Q90" secondAttribute="height" multiplier="4:3" id="NYy-hV-SeM"/>
                             </constraints>
                         </imageView>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wIU-ON-2FW">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="row-aZ-j8y">
                             <rect key="frame" x="15" y="216.5" width="245" height="40"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-8n-w5K">
-                                    <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-8n-w5K">
+                                    <rect key="frame" x="0.0" y="0.0" width="41" height="40"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <state key="normal" title="Name">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="inforButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="rT7-nm-ieq"/>
+                                    </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtm-7X-55L">
-                                    <rect key="frame" x="115" y="0.0" width="61" height="40"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OT-ij-QD9">
+                                    <rect key="frame" x="138" y="0.0" width="53" height="40"/>
                                     <state key="normal" title="ATK" image="img-explosion-filled">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="inforButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="mJu-yV-yfx"/>
+                                    </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaD-HM-pub">
-                                    <rect key="frame" x="191" y="0.0" width="54" height="40"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdi-Fe-dch">
+                                    <rect key="frame" x="201" y="0.0" width="44" height="40"/>
                                     <state key="normal" title="HP" image="img-hearts-filled">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="inforButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="1qv-R1-pkw"/>
+                                    </connections>
                                 </button>
                             </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="40" id="5I3-RO-OQm"/>
+                                <constraint firstAttribute="trailing" secondItem="Xdi-Fe-dch" secondAttribute="trailing" id="7ri-Ih-wvF"/>
+                                <constraint firstItem="iWm-8n-w5K" firstAttribute="leading" secondItem="row-aZ-j8y" secondAttribute="leading" id="D6a-Eu-KOd"/>
+                                <constraint firstItem="Xdi-Fe-dch" firstAttribute="leading" secondItem="9OT-ij-QD9" secondAttribute="trailing" constant="10" id="JxG-mN-gZ5"/>
+                                <constraint firstAttribute="bottom" secondItem="9OT-ij-QD9" secondAttribute="bottom" id="KJr-Cc-huw"/>
+                                <constraint firstAttribute="bottom" secondItem="Xdi-Fe-dch" secondAttribute="bottom" id="RJY-Jd-spT"/>
+                                <constraint firstItem="iWm-8n-w5K" firstAttribute="top" secondItem="row-aZ-j8y" secondAttribute="top" id="fOA-vc-VgN"/>
+                                <constraint firstItem="9OT-ij-QD9" firstAttribute="top" secondItem="row-aZ-j8y" secondAttribute="top" id="fdQ-ZC-ARg"/>
+                                <constraint firstAttribute="bottom" secondItem="iWm-8n-w5K" secondAttribute="bottom" id="mqK-p1-3kW"/>
+                                <constraint firstItem="9OT-ij-QD9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iWm-8n-w5K" secondAttribute="trailing" constant="10" id="swn-M1-09T"/>
+                                <constraint firstAttribute="height" constant="40" id="v4O-Lh-GZK"/>
+                                <constraint firstItem="Xdi-Fe-dch" firstAttribute="top" secondItem="row-aZ-j8y" secondAttribute="top" id="wjX-4m-giQ"/>
                             </constraints>
-                        </stackView>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="wIU-ON-2FW" firstAttribute="leading" secondItem="dfy-un-mGT" secondAttribute="leading" constant="15" id="9h7-NA-uvI"/>
-                        <constraint firstAttribute="trailing" secondItem="wIU-ON-2FW" secondAttribute="trailing" constant="15" id="MVc-UB-hBe"/>
+                        <constraint firstItem="row-aZ-j8y" firstAttribute="top" secondItem="qpz-JW-Q90" secondAttribute="bottom" constant="15" id="Q7M-jZ-Hx6"/>
+                        <constraint firstItem="row-aZ-j8y" firstAttribute="leading" secondItem="dfy-un-mGT" secondAttribute="leading" constant="15" id="bGa-I6-Kg2"/>
                         <constraint firstItem="qpz-JW-Q90" firstAttribute="leading" secondItem="dfy-un-mGT" secondAttribute="leading" constant="10" id="gvj-Vw-srn"/>
-                        <constraint firstItem="wIU-ON-2FW" firstAttribute="top" secondItem="qpz-JW-Q90" secondAttribute="bottom" constant="15" id="io5-2b-dpg"/>
                         <constraint firstItem="qpz-JW-Q90" firstAttribute="top" secondItem="dfy-un-mGT" secondAttribute="top" constant="10" id="pfQ-HK-COM"/>
                         <constraint firstAttribute="trailing" secondItem="qpz-JW-Q90" secondAttribute="trailing" constant="10" id="qvH-XP-Qx7"/>
+                        <constraint firstAttribute="trailing" secondItem="row-aZ-j8y" secondAttribute="trailing" constant="15" id="sQE-fR-EZa"/>
                         <constraint firstAttribute="height" constant="260" id="v3t-9S-khW"/>
                     </constraints>
                 </view>
@@ -120,6 +137,9 @@
                             <state key="normal" title="Apply">
                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             </state>
+                            <connections>
+                                <action selector="applyButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="7td-v0-lms"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>
@@ -151,8 +171,8 @@
     </objects>
     <resources>
         <image name="img-delete-sign" width="33" height="33"/>
-        <image name="img-explosion-filled" width="33" height="33"/>
-        <image name="img-hearts-filled" width="33" height="33"/>
+        <image name="img-explosion-filled" width="20" height="20"/>
+        <image name="img-hearts-filled" width="20" height="20"/>
         <image name="img-meme-yaoming" width="512" height="512"/>
         <image name="img-ocean" width="640" height="1136"/>
     </resources>
