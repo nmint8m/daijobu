@@ -55,7 +55,7 @@ final class DecreaseFontSizeOfButtonsVC: UIViewController {
         hpTextField.delegate = self
     }
 
-    private func updateButtonsTitle() {
+    private func updateButtonsTitleAndFont() {
         var name: String = nameTextField.text ?? Config.defaultName
         name = name.trimmed.isEmpty ? Config.defaultName : name
 
@@ -69,6 +69,11 @@ final class DecreaseFontSizeOfButtonsVC: UIViewController {
         self.atk = atk
         self.hp = hp
 
+        updateButtonsTitle()
+        updateButtonsFont()
+    }
+
+    private func updateButtonsTitle() {
         nameButton.setTitle(name, for: .normal)
         atkButton.setTitle(atk, for: .normal)
         hpButton.setTitle(hp, for: .normal)
@@ -84,11 +89,11 @@ final class DecreaseFontSizeOfButtonsVC: UIViewController {
             Config.buttonImageWidth * 2 + // There'r 2 buttons that have image, open debug views to get this number
             Config.insideButtonSpacing * 2 // There'r 2 buttons that have image, open debug views to get this number
 
-        let nameRealWidth = (buttonsContainerView.bounds.width - sumSpacing) / sumStringsWidth * nameWidth
+        let nameRealWidth = ((buttonsContainerView.bounds.width - sumSpacing) / sumStringsWidth * nameWidth)
 
-        let nameScale = ((nameRealWidth / nameWidth) * Config.defaultFontSize).rounded(.down)
+        let expectedFontSizeToFitNameLabel = ((nameRealWidth / nameWidth) * Config.defaultFontSize).rounded(.down) - 1
 
-        let newFontSize = min(nameScale, Config.defaultFontSize)
+        let newFontSize = min(expectedFontSizeToFitNameLabel, Config.defaultFontSize)
 
         updateButtonFont(nameButton, size: newFontSize)
         updateButtonFont(atkButton, size: newFontSize)
@@ -105,8 +110,7 @@ final class DecreaseFontSizeOfButtonsVC: UIViewController {
     }
 
     @IBAction func applyButtonTouchUpInside(_ sender: Any) {
-        updateButtonsTitle()
-        updateButtonsFont()
+        updateButtonsTitleAndFont()
     }
 
     @IBAction func inforButtonTouchUpInside(_ sender: Any) {

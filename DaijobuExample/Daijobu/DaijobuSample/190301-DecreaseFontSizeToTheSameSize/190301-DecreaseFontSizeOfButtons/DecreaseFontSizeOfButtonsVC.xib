@@ -27,17 +27,19 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-ocean" translatesAutoresizingMaskIntoConstraints="NO" id="sEa-I9-idw">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-dogs" translatesAutoresizingMaskIntoConstraints="NO" id="sEa-I9-idw">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdw-So-fuy">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdw-So-fuy">
                     <rect key="frame" x="320" y="20" width="40" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="uzl-n9-NKW"/>
                         <constraint firstAttribute="width" constant="40" id="vQg-RO-9DQ"/>
                     </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                    <state key="normal" image="img-delete-sign"/>
+                    <state key="normal" image="img-close"/>
                     <connections>
                         <action selector="closeBtnTouchUpInside:" destination="-1" eventType="touchUpInside" id="YCw-w8-Y7N"/>
                     </connections>
@@ -45,39 +47,36 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfy-un-mGT">
                     <rect key="frame" x="50" y="80" width="275" height="260"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-meme-yaoming" translatesAutoresizingMaskIntoConstraints="NO" id="qpz-JW-Q90">
-                            <rect key="frame" x="10" y="10" width="255" height="191.5"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-corgi" translatesAutoresizingMaskIntoConstraints="NO" id="qpz-JW-Q90">
+                            <rect key="frame" x="42.5" y="10" width="190" height="190"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="qpz-JW-Q90" secondAttribute="height" multiplier="4:3" id="NYy-hV-SeM"/>
+                                <constraint firstAttribute="height" constant="190" id="4vr-8N-quc"/>
+                                <constraint firstAttribute="width" constant="190" id="NOK-6t-J6G"/>
                             </constraints>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="row-aZ-j8y">
-                            <rect key="frame" x="15" y="216.5" width="245" height="40"/>
+                            <rect key="frame" x="15" y="215" width="245" height="40"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-8n-w5K">
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-8n-w5K">
                                     <rect key="frame" x="0.0" y="0.0" width="41" height="40"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <state key="normal" title="Name">
-                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Name"/>
                                     <connections>
                                         <action selector="inforButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="rT7-nm-ieq"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OT-ij-QD9">
-                                    <rect key="frame" x="138" y="0.0" width="53" height="40"/>
-                                    <state key="normal" title="ATK" image="img-explosion-filled">
-                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OT-ij-QD9">
+                                    <rect key="frame" x="146" y="0.0" width="48" height="40"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="ATK" image="img-explosion-filled"/>
                                     <connections>
                                         <action selector="inforButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="mJu-yV-yfx"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdi-Fe-dch">
-                                    <rect key="frame" x="201" y="0.0" width="44" height="40"/>
-                                    <state key="normal" title="HP" image="img-hearts-filled">
-                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdi-Fe-dch">
+                                    <rect key="frame" x="204" y="0.0" width="41" height="40"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="HP" image="img-hearts-filled"/>
                                     <connections>
                                         <action selector="inforButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="1qv-R1-pkw"/>
                                     </connections>
@@ -99,13 +98,12 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="qpz-JW-Q90" firstAttribute="centerX" secondItem="dfy-un-mGT" secondAttribute="centerX" id="4Dx-JU-LoM"/>
                         <constraint firstItem="row-aZ-j8y" firstAttribute="top" secondItem="qpz-JW-Q90" secondAttribute="bottom" constant="15" id="Q7M-jZ-Hx6"/>
                         <constraint firstItem="row-aZ-j8y" firstAttribute="leading" secondItem="dfy-un-mGT" secondAttribute="leading" constant="15" id="bGa-I6-Kg2"/>
-                        <constraint firstItem="qpz-JW-Q90" firstAttribute="leading" secondItem="dfy-un-mGT" secondAttribute="leading" constant="10" id="gvj-Vw-srn"/>
                         <constraint firstItem="qpz-JW-Q90" firstAttribute="top" secondItem="dfy-un-mGT" secondAttribute="top" constant="10" id="pfQ-HK-COM"/>
-                        <constraint firstAttribute="trailing" secondItem="qpz-JW-Q90" secondAttribute="trailing" constant="10" id="qvH-XP-Qx7"/>
                         <constraint firstAttribute="trailing" secondItem="row-aZ-j8y" secondAttribute="trailing" constant="15" id="sQE-fR-EZa"/>
                         <constraint firstAttribute="height" constant="260" id="v3t-9S-khW"/>
                     </constraints>
@@ -133,7 +131,7 @@
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdP-kB-xzl">
                             <rect key="frame" x="0.0" y="105" width="275" height="30"/>
-                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Apply">
                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             </state>
@@ -170,10 +168,10 @@
         </view>
     </objects>
     <resources>
-        <image name="img-delete-sign" width="33" height="33"/>
+        <image name="img-close" width="30" height="30"/>
+        <image name="img-corgi" width="146.8800048828125" height="146.8800048828125"/>
+        <image name="img-dogs" width="842.25" height="708.75"/>
         <image name="img-explosion-filled" width="20" height="20"/>
         <image name="img-hearts-filled" width="20" height="20"/>
-        <image name="img-meme-yaoming" width="512" height="512"/>
-        <image name="img-ocean" width="640" height="1136"/>
     </resources>
 </document>
