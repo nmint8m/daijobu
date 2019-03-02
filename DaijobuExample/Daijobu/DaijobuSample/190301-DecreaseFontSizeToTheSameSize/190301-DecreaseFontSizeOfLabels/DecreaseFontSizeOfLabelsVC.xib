@@ -27,17 +27,19 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-ocean" translatesAutoresizingMaskIntoConstraints="NO" id="ssS-fu-mWW">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-dogs" translatesAutoresizingMaskIntoConstraints="NO" id="ssS-fu-mWW">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-Ez-p9f">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-Ez-p9f">
                     <rect key="frame" x="320" y="20" width="40" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="9ni-44-XCd"/>
                         <constraint firstAttribute="width" constant="40" id="C3H-Ie-tNB"/>
                     </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                    <state key="normal" image="img-delete-sign"/>
+                    <state key="normal" image="img-close"/>
                     <connections>
                         <action selector="closeBtnTouchUpInside:" destination="-1" eventType="touchUpInside" id="ORO-DD-rBZ"/>
                     </connections>
@@ -45,14 +47,15 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DBl-BL-UVk">
                     <rect key="frame" x="50" y="80" width="275" height="260"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-meme-yaoming" translatesAutoresizingMaskIntoConstraints="NO" id="IYJ-GJ-qTZ">
-                            <rect key="frame" x="10" y="10" width="255" height="191.5"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-corgi" translatesAutoresizingMaskIntoConstraints="NO" id="IYJ-GJ-qTZ">
+                            <rect key="frame" x="42.5" y="10" width="190" height="190"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="IYJ-GJ-qTZ" secondAttribute="height" multiplier="4:3" id="gIG-vo-m5F"/>
+                                <constraint firstAttribute="height" constant="190" id="Mfd-ix-bWL"/>
+                                <constraint firstAttribute="width" constant="190" id="hox-q9-W0L"/>
                             </constraints>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OB0-Xd-9iK">
-                            <rect key="frame" x="15" y="216.5" width="245" height="40"/>
+                            <rect key="frame" x="15" y="215" width="245" height="40"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nPa-KD-K9r">
                                     <rect key="frame" x="0.0" y="0.0" width="176.5" height="40"/>
@@ -75,14 +78,13 @@
                             </constraints>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="IYJ-GJ-qTZ" firstAttribute="centerX" secondItem="DBl-BL-UVk" secondAttribute="centerX" id="Owy-VG-3Dn"/>
                         <constraint firstAttribute="height" constant="260" id="QHo-is-vsx"/>
                         <constraint firstItem="IYJ-GJ-qTZ" firstAttribute="top" secondItem="DBl-BL-UVk" secondAttribute="top" constant="10" id="QjN-eA-VOe"/>
                         <constraint firstItem="OB0-Xd-9iK" firstAttribute="leading" secondItem="DBl-BL-UVk" secondAttribute="leading" constant="15" id="ed2-d6-wKg"/>
                         <constraint firstItem="OB0-Xd-9iK" firstAttribute="top" secondItem="IYJ-GJ-qTZ" secondAttribute="bottom" constant="15" id="fad-rs-Qn9"/>
-                        <constraint firstItem="IYJ-GJ-qTZ" firstAttribute="leading" secondItem="DBl-BL-UVk" secondAttribute="leading" constant="10" id="gCs-kh-2zf"/>
-                        <constraint firstAttribute="trailing" secondItem="IYJ-GJ-qTZ" secondAttribute="trailing" constant="10" id="oGu-f4-5DH"/>
                         <constraint firstAttribute="trailing" secondItem="OB0-Xd-9iK" secondAttribute="trailing" constant="15" id="tAc-sO-Uj1"/>
                     </constraints>
                 </view>
@@ -109,7 +111,7 @@
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKO-bp-eGK">
                             <rect key="frame" x="0.0" y="105" width="275" height="30"/>
-                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Apply">
                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             </state>
@@ -146,8 +148,8 @@
         </view>
     </objects>
     <resources>
-        <image name="img-delete-sign" width="33" height="33"/>
-        <image name="img-meme-yaoming" width="512" height="512"/>
-        <image name="img-ocean" width="640" height="1136"/>
+        <image name="img-close" width="30" height="30"/>
+        <image name="img-corgi" width="146.8800048828125" height="146.8800048828125"/>
+        <image name="img-dogs" width="842.25" height="708.75"/>
     </resources>
 </document>
