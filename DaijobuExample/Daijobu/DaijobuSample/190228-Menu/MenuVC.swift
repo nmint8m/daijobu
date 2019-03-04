@@ -75,6 +75,11 @@ extension MenuVC: UITableViewDataSource, UITableViewDelegate {
             // MARK: - 190301-DecreaseFontSizeOfButtons
             let vc = DecreaseFontSizeOfButtonsVC()
             present(vc, animated: true, completion: nil)
+
+        case .expandlingUITableViewCellWithUIStackView:
+            // MARK: - 190303-ExpandingTableViewCellWithStackView
+            let vc = ExpandingTableViewCellWithStackViewVC()
+            present(vc, animated: true, completion: nil)
         }
     }
 }
@@ -86,6 +91,7 @@ extension MenuVC {
         case navigationPushAlongSideTransition
         case decreaseFontSizeOfMultipleLabels
         case decreaseFontSizeOfMultipleButtons
+        case expandlingUITableViewCellWithUIStackView
 
         var title: String {
             switch self {
@@ -99,6 +105,8 @@ extension MenuVC {
                 return "Decrease Font Size Of Multiple Labels"
             case .decreaseFontSizeOfMultipleButtons:
                 return "Decrease Font Size Of Multiple Buttons"
+            case .expandlingUITableViewCellWithUIStackView:
+                return "Expanding UITableViewCell With UIStackView"
             }
         }
 
