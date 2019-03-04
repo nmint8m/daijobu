@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		223A963C2182D5860013D262 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223A963B2182D5860013D262 /* UIViewControllerExt.swift */; };
 		223A96402182D6010013D262 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223A963F2182D6010013D262 /* ViewController.swift */; };
+		2245E2BA222C3334008BFA5F /* ExpandingWithStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2245E2B8222C3334008BFA5F /* ExpandingWithStackViewCell.swift */; };
+		2245E2BB222C3334008BFA5F /* ExpandingWithStackViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2245E2B9222C3334008BFA5F /* ExpandingWithStackViewCell.xib */; };
+		2245E2BD222C3E7B008BFA5F /* ExpandingTableViewCellWithStackViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2245E2BC222C3E7A008BFA5F /* ExpandingTableViewCellWithStackViewVC.swift */; };
 		2249575C218AC98000069909 /* NaviPushAlongsideTransitionCompletionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2249575B218AC98000069909 /* NaviPushAlongsideTransitionCompletionVC.xib */; };
 		225CFD1A2181B1DD00D277F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CFD192181B1DD00D277F8 /* AppDelegate.swift */; };
 		225CFD212181B1DF00D277F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225CFD202181B1DF00D277F8 /* Assets.xcassets */; };
@@ -21,6 +24,7 @@
 		229C11A22182C97500983A96 /* NaviPushCompletionNaviExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C11A12182C97500983A96 /* NaviPushCompletionNaviExt.swift */; };
 		229C11AB2182CBCE00983A96 /* NaviPushCompletionVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C11A92182CBCE00983A96 /* NaviPushCompletionVC1.swift */; };
 		229C11AC2182CBCE00983A96 /* NaviPushCompletionVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229C11AA2182CBCE00983A96 /* NaviPushCompletionVC1.xib */; };
+		22C07CB1222BBC5F00C60A3A /* ExpandingTableViewCellWithStackViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C07CAF222BBC5F00C60A3A /* ExpandingTableViewCellWithStackViewVC.xib */; };
 		22D68B572229A21E00C90F78 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D68B562229A21E00C90F78 /* StringExt.swift */; };
 		22F315EB22290FA9005336AF /* DecreaseFontSizeOfLabelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F315E922290FA9005336AF /* DecreaseFontSizeOfLabelsVC.swift */; };
 		22F315EC22290FA9005336AF /* DecreaseFontSizeOfLabelsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F315EA22290FA9005336AF /* DecreaseFontSizeOfLabelsVC.xib */; };
@@ -50,6 +54,9 @@
 /* Begin PBXFileReference section */
 		223A963B2182D5860013D262 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		223A963F2182D6010013D262 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2245E2B8222C3334008BFA5F /* ExpandingWithStackViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingWithStackViewCell.swift; sourceTree = "<group>"; };
+		2245E2B9222C3334008BFA5F /* ExpandingWithStackViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandingWithStackViewCell.xib; sourceTree = "<group>"; };
+		2245E2BC222C3E7A008BFA5F /* ExpandingTableViewCellWithStackViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandingTableViewCellWithStackViewVC.swift; sourceTree = "<group>"; };
 		2249575B218AC98000069909 /* NaviPushAlongsideTransitionCompletionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NaviPushAlongsideTransitionCompletionVC.xib; sourceTree = "<group>"; };
 		225CFD162181B1DD00D277F8 /* Daijobu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daijobu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		225CFD192181B1DD00D277F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +75,7 @@
 		229C11A12182C97500983A96 /* NaviPushCompletionNaviExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviPushCompletionNaviExt.swift; sourceTree = "<group>"; };
 		229C11A92182CBCE00983A96 /* NaviPushCompletionVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviPushCompletionVC1.swift; sourceTree = "<group>"; };
 		229C11AA2182CBCE00983A96 /* NaviPushCompletionVC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NaviPushCompletionVC1.xib; sourceTree = "<group>"; };
+		22C07CAF222BBC5F00C60A3A /* ExpandingTableViewCellWithStackViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandingTableViewCellWithStackViewVC.xib; sourceTree = "<group>"; };
 		22D68B562229A21E00C90F78 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		22F315E922290FA9005336AF /* DecreaseFontSizeOfLabelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecreaseFontSizeOfLabelsVC.swift; sourceTree = "<group>"; };
 		22F315EA22290FA9005336AF /* DecreaseFontSizeOfLabelsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DecreaseFontSizeOfLabelsVC.xib; sourceTree = "<group>"; };
@@ -244,6 +252,7 @@
 				228C04712184711B00AA26B4 /* 181027-NaviPushAlongsideTransition */,
 				22FB35702227DA3E0020D8DB /* 190228-Menu */,
 				22F315E622290F17005336AF /* 190301-DecreaseFontSizeToTheSameSize */,
+				22C07CAD222BBC2500C60A3A /* 190303-ExpandingTableViewCellWithStackView */,
 			);
 			path = DaijobuSample;
 			sourceTree = "<group>";
@@ -265,6 +274,17 @@
 				228C046E218460FD00AA26B4 /* NaviPushCompletionVC2.xib */,
 			);
 			path = "181026-VC";
+			sourceTree = "<group>";
+		};
+		22C07CAD222BBC2500C60A3A /* 190303-ExpandingTableViewCellWithStackView */ = {
+			isa = PBXGroup;
+			children = (
+				2245E2BC222C3E7A008BFA5F /* ExpandingTableViewCellWithStackViewVC.swift */,
+				22C07CAF222BBC5F00C60A3A /* ExpandingTableViewCellWithStackViewVC.xib */,
+				2245E2B8222C3334008BFA5F /* ExpandingWithStackViewCell.swift */,
+				2245E2B9222C3334008BFA5F /* ExpandingWithStackViewCell.xib */,
+			);
+			path = "190303-ExpandingTableViewCellWithStackView";
 			sourceTree = "<group>";
 		};
 		22F315E622290F17005336AF /* 190301-DecreaseFontSizeToTheSameSize */ = {
@@ -407,10 +427,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2245E2BB222C3334008BFA5F /* ExpandingWithStackViewCell.xib in Resources */,
 				22F315EC22290FA9005336AF /* DecreaseFontSizeOfLabelsVC.xib in Resources */,
 				229C11AC2182CBCE00983A96 /* NaviPushCompletionVC1.xib in Resources */,
 				228C0470218460FD00AA26B4 /* NaviPushCompletionVC2.xib in Resources */,
 				2249575C218AC98000069909 /* NaviPushAlongsideTransitionCompletionVC.xib in Resources */,
+				22C07CB1222BBC5F00C60A3A /* ExpandingTableViewCellWithStackViewVC.xib in Resources */,
 				225CFD212181B1DF00D277F8 /* Assets.xcassets in Resources */,
 				22FB35742227DA3E0020D8DB /* MenuVC.xib in Resources */,
 				22F315F022290FBC005336AF /* DecreaseFontSizeOfButtonsVC.xib in Resources */,
@@ -444,8 +466,10 @@
 				229C11A22182C97500983A96 /* NaviPushCompletionNaviExt.swift in Sources */,
 				223A96402182D6010013D262 /* ViewController.swift in Sources */,
 				229C11AB2182CBCE00983A96 /* NaviPushCompletionVC1.swift in Sources */,
+				2245E2BA222C3334008BFA5F /* ExpandingWithStackViewCell.swift in Sources */,
 				228C04772184743100AA26B4 /* NaviPushAlongsideTransitionCompletionVC.swift in Sources */,
 				225CFD1A2181B1DD00D277F8 /* AppDelegate.swift in Sources */,
+				2245E2BD222C3E7B008BFA5F /* ExpandingTableViewCellWithStackViewVC.swift in Sources */,
 				228C046F218460FD00AA26B4 /* NaviPushCompletionVC2.swift in Sources */,
 				22F315EB22290FA9005336AF /* DecreaseFontSizeOfLabelsVC.swift in Sources */,
 				22D68B572229A21E00C90F78 /* StringExt.swift in Sources */,
