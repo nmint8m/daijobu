@@ -20,9 +20,9 @@ Yêu cầu: Khi nội dung của Name, ATK và HP cùng dài ra, font size của
 
 Tương tự ví dụ 1, nhưng thay 3 `UILabel` bằng 3 `UIButton`.
 
-![DecreaseFontSizeOfButtons-1](https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfButtons-1.png)
+![DecreaseFontSizeOfButtons-1][Image 1]
 
-![DecreaseFontSizeOfButtons-2](https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfButtons-2.png)
+![DecreaseFontSizeOfButtons-2][Image 2]
 
 
 
@@ -45,7 +45,7 @@ Tương tự ví dụ 1, nhưng thay 3 `UILabel` bằng 3 `UIButton`.
 - Bước 2: Auto layout và config `stackView`:
  - Auto layout và config bằng Interface Builder:
 
-![DecreaseFontSizeOfLabels-3](https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfLabels-3.png)
+![DecreaseFontSizeOfLabels-3][Image 3]
 
  - Config bằng code:
 
@@ -65,7 +65,7 @@ Tương tự ví dụ 1, nhưng thay 3 `UILabel` bằng 3 `UIButton`.
    
  - Config bằng Interface Builder:
 
-![DecreaseFontSizeOfLabels-4](https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfLabels-4.png)
+![DecreaseFontSizeOfLabels-4][Image 5]
 
  - Config bằng code:
 
@@ -86,7 +86,7 @@ Tương tự ví dụ 1, nhưng thay 3 `UILabel` bằng 3 `UIButton`.
     }
 ```
 
-- Bước 4: Khi thay đổi nội dung của 3 label (nhấn Apply để thay đổi nội dung của label), nếu chiều rộng nội dung của các label tràn chiều rộng của `stackView` thì set `distribution = .fillProportionally`, ngược lại thì set `distribution = .fill`. Tham khảo thêm tại [UIStackView.Distribution](https://developer.apple.com/documentation/uikit/uistackview/distribution).
+- Bước 4: Khi thay đổi nội dung của 3 label (nhấn Apply để thay đổi nội dung của label), nếu chiều rộng nội dung của các label tràn chiều rộng của `stackView` thì set `distribution = .fillProportionally`, ngược lại thì set `distribution = .fill`. Tham khảo thêm tại [UIStackView.Distribution][Reference 3].
 
 ```swift
 // class DecreaseFontSizeOfLabelsVC: UIViewController
@@ -101,7 +101,7 @@ Tương tự ví dụ 1, nhưng thay 3 `UILabel` bằng 3 `UIButton`.
     }
 ```
 
-Tuy nhiên giải pháp sử dụng UIStackView chưa hoàn toàn toàn diện, vì trong một số trường hợp, font size của các label giảm không đều nhau bởi `contentHuggingPriority` mình set trước đó. Tham khảo thêm tại [Views with Intrinsic Content Size](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/ViewswithIntrinsicContentSize.html).
+Tuy nhiên giải pháp sử dụng UIStackView chưa hoàn toàn toàn diện, vì trong một số trường hợp, font size của các label giảm không đều nhau bởi `contentHuggingPriority` mình set trước đó. Tham khảo thêm tại [Views with Intrinsic Content Size][Reference 2].
 
 Giải pháp tính toán và điểu chỉnh lại font size được trình bày dưới đây cho phép mình giảm chính xác hơn.
 
@@ -118,7 +118,7 @@ Giải pháp sau đây mình sẽ áp dụng cho Ví dụ 2.
  - Set compression-resistance priority cho `nameButton`, `atkButton` và `hpButton` lần lượt là 750, 751, 752.
  - Config bằng Interface Builder:
 
-![DecreaseFontSizeOfButtons-3](https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfButtons-3.png)
+![DecreaseFontSizeOfButtons-3][Image 4]
 
  - Config bằng code:
   
@@ -189,11 +189,36 @@ extension String {
 
 
 
+### More
+
+Quay lại [Daijobu Project][Daijobu]
+
+
+
 ### Reference
 
-[UIStackView](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/LayoutUsingStackViews.html#//apple_ref/doc/uid/TP40010853-CH11-SW1)
+[UIStackView][Reference 1]
 
-[Views with Intrinsic Content Size](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/ViewswithIntrinsicContentSize.html)
+[Views with Intrinsic Content Size][Reference 2]
 
-[UIStackView.Distribution](https://developer.apple.com/documentation/uikit/uistackview/distribution)
- 
+[UIStackView.Distribution][Reference 3]
+
+
+
+[Image 1]: https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfButtons-1.png "DecreaseFontSizeOfButtons-1"
+
+[Image 2]: https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfButtons-2.png "DecreaseFontSizeOfButtons-2"
+
+[Image 3]: (https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfLabels-3.png) "DecreaseFontSizeOfLabels-3"
+
+[Image 4]: https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfLabels-4.png "DecreaseFontSizeOfLabels-4"
+
+[Image 5]: https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfButtons-3.png "DecreaseFontSizeOfButtons-3"
+
+[Daijobu]: https://github.com/nmint8m/daijobu
+
+[Reference 1]: https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/LayoutUsingStackViews.html#//apple_ref/doc/uid/TP40010853-CH11-SW1 "UIStackView" 
+
+[Reference 2]: https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/ViewswithIntrinsicContentSize.html "Views with Intrinsic Content Size"
+
+[Reference 3]: https://developer.apple.com/documentation/uikit/uistackview/distribution "UIStackView.Distribution"

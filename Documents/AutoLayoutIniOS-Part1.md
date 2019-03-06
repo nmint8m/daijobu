@@ -85,6 +85,8 @@ Auto layout điều khiển UI bằng cách sử dụng một chuỗi các const
 
 Phần tiếp theo mình sẽ phân tích sâu hơn về constraint trong auto layout.
 
+### More
+
 Đọc tiếp: 
 
 - [Auto Layout In iOS For Beginner - Part 2 - Anatomy of a Constraint][Part 2]
