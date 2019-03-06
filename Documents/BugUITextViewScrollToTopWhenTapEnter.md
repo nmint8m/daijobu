@@ -4,12 +4,20 @@
 
 *Written by: __Nguyen Minh Tam__*
 
-### How to deal with this:
+### How to deal with this
 
 ```swift
 textView.layoutManager.allowsNonContiguousLayout = false
 ```
 
-### Reference:
+### More
 
-[Hayatomo's solution](http://hayatomo.com/1307)
+Quay lại [Daijobu Project][Daijobu]
+
+### Reference
+
+[Hayatomo's solution] [Reference 1]
+
+[Daijobu]: https://github.com/nmint8m/daijobu
+
+[Reference 1]: http://hayatomo.com/1307
