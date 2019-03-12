@@ -7,7 +7,9 @@ __Lời khuyên:__ Recommend đối với những list ít item và cố định
 
 Sau đây là ví dụ expanding cell tự co giãn đơn giản:
 
-![ExpandingCellWithUIStackView-3](https://github.com/nmint8m/daijobu/blob/master/Documents/Images/ExpandingCellWithUIStackView-3.gif)
+<center>
+	<img src="./Images/ExpandingCellWithUIStackView-3.gif">
+</center>
 
 Cách thức hoạt động: Trong cell chứa `stackView` có hai view con là `titleButton` và `descriptionLabel`. Khi nhấn vào `titleButton` thì expanding / collapse chính cell đó bằng cách ẩn / hiện `descriptionLabel` và reload cell.
 
@@ -19,11 +21,15 @@ Tham khảo thêm cell tự co giãn tại [UITableViewCell self-sizing]().
 
 Layout cho `UITableViewCell` `ExpandingTableViewCellWithStackViewVC`:
 
-![ExpandingCellWithUIStackView-2](https://github.com/nmint8m/daijobu/blob/master/Documents/Images/ExpandingCellWithUIStackView-2.png)
+<center>
+	<img src="./Images/ExpandingCellWithUIStackView-2.png" height="250">
+</center>
 
 Auto layout cho `UITableViewCell` `ExpandingTableViewCellWithStackViewVC` như sau:
 
-![ExpandingCellWithUIStackView-1](https://github.com/nmint8m/daijobu/blob/master/Documents/Images/ExpandingCellWithUIStackView-1.png)
+<center>
+	<img src="./Images/ExpandingCellWithUIStackView-1.png" height="500">
+</center>
 
 
 
@@ -134,6 +140,6 @@ Quay lại [Daijobu Project][Daijobu]
 
 ### Reference
 
-
+---
 
 [Daijobu]: https://github.com/nmint8m/daijobu
