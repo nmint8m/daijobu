@@ -20,9 +20,10 @@ Yêu cầu: Khi nội dung của Name, ATK và HP cùng dài ra, font size của
 
 Tương tự ví dụ 1, nhưng thay 3 `UILabel` bằng 3 `UIButton`.
 
-![DecreaseFontSizeOfButtons-1][Image 1]
-
-![DecreaseFontSizeOfButtons-2][Image 2]
+<center>
+	<img src="./Images/DecreaseFontSizeOfButtons-1.png" height="500">
+	<img src="./Images/DecreaseFontSizeOfButtons-2.png" height="500">
+</center>
 
 
 
@@ -45,7 +46,9 @@ Tương tự ví dụ 1, nhưng thay 3 `UILabel` bằng 3 `UIButton`.
 - Bước 2: Auto layout và config `stackView`:
  - Auto layout và config bằng Interface Builder:
 
-![DecreaseFontSizeOfLabels-3][Image 3]
+<center>
+	<img src="./Images/DecreaseFontSizeOfLabels-3.png" height="140">
+</center>
 
  - Config bằng code:
 
@@ -65,7 +68,9 @@ Tương tự ví dụ 1, nhưng thay 3 `UILabel` bằng 3 `UIButton`.
    
  - Config bằng Interface Builder:
 
-![DecreaseFontSizeOfLabels-4][Image 5]
+<center>
+	<img src="./Images/DecreaseFontSizeOfButtons-3.png">
+</center>
 
  - Config bằng code:
 
@@ -118,7 +123,9 @@ Giải pháp sau đây mình sẽ áp dụng cho Ví dụ 2.
  - Set compression-resistance priority cho `nameButton`, `atkButton` và `hpButton` lần lượt là 750, 751, 752.
  - Config bằng Interface Builder:
 
-![DecreaseFontSizeOfButtons-3][Image 4]
+<center>
+	<img src="./Images/DecreaseFontSizeOfLabels-4.png "DecreaseFontSizeOfLabels-4" height="150">
+</center>
 
  - Config bằng code:
   
@@ -203,17 +210,7 @@ Quay lại [Daijobu Project][Daijobu]
 
 [UIStackView.Distribution][Reference 3]
 
-
-
-[Image 1]: https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfButtons-1.png "DecreaseFontSizeOfButtons-1"
-
-[Image 2]: https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfButtons-2.png "DecreaseFontSizeOfButtons-2"
-
-[Image 3]: (https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfLabels-3.png) "DecreaseFontSizeOfLabels-3"
-
-[Image 4]: https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfLabels-4.png "DecreaseFontSizeOfLabels-4"
-
-[Image 5]: https://github.com/nmint8m/daijobu/blob/master/Documents/Images/DecreaseFontSizeOfButtons-3.png "DecreaseFontSizeOfButtons-3"
+---
 
 [Daijobu]: https://github.com/nmint8m/daijobu
 
