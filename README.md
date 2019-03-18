@@ -12,10 +12,4 @@ Struggling while developing iOS application? #everythingisdaijobu This is magic 
 
 4. [Decrease font size of multiple UILabel and UIButton down to the same when content of them is expanding](https://github.com/nmint8m/daijobu/blob/master/Documents/DecreaseFontSizeOfMultipleUILabelAndUIButtonDownToTheSame.md)
 
-5. [Expanding and collapsing cell of table view with UIStackView](https://github.com/nmint8m/daijobu/blob/master/Documents/ExpandingCellWithUIStackView.md) 
-
-6. [Auto layout in iOS - Part 1 - What is auto layout?](https://github.com/nmint8m/daijobu/blob/master/Documents/AutoLayoutIniOS-Part1.md)
-
-7. [Auto layout in iOS - Part 2 - Anatomy of a constraint](https://github.com/nmint8m/daijobu/blob/master/Documents/AutoLayoutIniOS-Part2.md)
-
-8. [Auto layout in iOS - Part 3 - Auto layout without constraints](https://github.com/nmint8m/daijobu/blob/master/Documents/AutoLayoutIniOS-Part3.md)
+5. [Expanding and collapsing cell of table view with UIStackView](https://github.com/nmint8m/daijobu/blob/master/Documents/ExpandingCellWithUIStackView.md)
