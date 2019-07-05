@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuVC: UIViewController {
+final class MenuVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -80,6 +80,11 @@ extension MenuVC: UITableViewDataSource, UITableViewDelegate {
             // MARK: - 190303-ExpandingTableViewCellWithStackView
             let vc = ExpandingTableViewCellWithStackViewVC()
             present(vc, animated: true, completion: nil)
+
+        case .internationalizationLocalization:
+            // MARK: - 190704-InternationalizationLocalization
+            let vc = InternationaliztionLocalizationVC()
+            present(vc, animated: true, completion: nil)
         }
     }
 }
@@ -92,6 +97,7 @@ extension MenuVC {
         case decreaseFontSizeOfMultipleLabels
         case decreaseFontSizeOfMultipleButtons
         case expandlingUITableViewCellWithUIStackView
+        case internationalizationLocalization
 
         var title: String {
             switch self {
@@ -107,6 +113,8 @@ extension MenuVC {
                 return "Decrease Font Size Of Multiple Buttons"
             case .expandlingUITableViewCellWithUIStackView:
                 return "Expanding UITableViewCell With UIStackView"
+            case .internationalizationLocalization:
+                return "Internationalization and Localization"
             }
         }
 
