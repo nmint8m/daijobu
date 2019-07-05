@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2230845E22CF47A50013C923 /* InternationaliztionLocalizationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2230846022CF47A50013C923 /* InternationaliztionLocalizationVC.xib */; };
 		223A963C2182D5860013D262 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223A963B2182D5860013D262 /* UIViewControllerExt.swift */; };
 		223A96402182D6010013D262 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223A963F2182D6010013D262 /* ViewController.swift */; };
 		2245E2BA222C3334008BFA5F /* ExpandingWithStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2245E2B8222C3334008BFA5F /* ExpandingWithStackViewCell.swift */; };
 		2245E2BB222C3334008BFA5F /* ExpandingWithStackViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2245E2B9222C3334008BFA5F /* ExpandingWithStackViewCell.xib */; };
 		2245E2BD222C3E7B008BFA5F /* ExpandingTableViewCellWithStackViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2245E2BC222C3E7A008BFA5F /* ExpandingTableViewCellWithStackViewVC.swift */; };
 		2249575C218AC98000069909 /* NaviPushAlongsideTransitionCompletionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2249575B218AC98000069909 /* NaviPushAlongsideTransitionCompletionVC.xib */; };
+		22595AD722CE512C00543047 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22595AD922CE512C00543047 /* Localizable.strings */; };
+		22595ADE22CE59C000543047 /* InternationaliztionLocalizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22595ADC22CE59C000543047 /* InternationaliztionLocalizationVC.swift */; };
 		225CFD1A2181B1DD00D277F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CFD192181B1DD00D277F8 /* AppDelegate.swift */; };
 		225CFD212181B1DF00D277F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225CFD202181B1DF00D277F8 /* Assets.xcassets */; };
 		225CFD2F2181B1DF00D277F8 /* DaijobuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CFD2E2181B1DF00D277F8 /* DaijobuTests.swift */; };
@@ -52,12 +55,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2230846622CF487A0013C923 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InternationaliztionLocalizationVC.strings; sourceTree = "<group>"; };
+		2230846722CF48EB0013C923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/InternationaliztionLocalizationVC.xib; sourceTree = "<group>"; };
+		2230846922CF490F0013C923 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InternationaliztionLocalizationVC.strings; sourceTree = "<group>"; };
 		223A963B2182D5860013D262 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		223A963F2182D6010013D262 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2245E2B8222C3334008BFA5F /* ExpandingWithStackViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingWithStackViewCell.swift; sourceTree = "<group>"; };
 		2245E2B9222C3334008BFA5F /* ExpandingWithStackViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandingWithStackViewCell.xib; sourceTree = "<group>"; };
 		2245E2BC222C3E7A008BFA5F /* ExpandingTableViewCellWithStackViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandingTableViewCellWithStackViewVC.swift; sourceTree = "<group>"; };
 		2249575B218AC98000069909 /* NaviPushAlongsideTransitionCompletionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NaviPushAlongsideTransitionCompletionVC.xib; sourceTree = "<group>"; };
+		22595AD822CE512C00543047 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22595ADA22CE514E00543047 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22595ADC22CE59C000543047 /* InternationaliztionLocalizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternationaliztionLocalizationVC.swift; sourceTree = "<group>"; };
 		225CFD162181B1DD00D277F8 /* Daijobu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daijobu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		225CFD192181B1DD00D277F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		225CFD202181B1DF00D277F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,6 +143,15 @@
 				223A963F2182D6010013D262 /* ViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		22595ADB22CE597200543047 /* 190706-InternationaliztionLocalization */ = {
+			isa = PBXGroup;
+			children = (
+				2230846022CF47A50013C923 /* InternationaliztionLocalizationVC.xib */,
+				22595ADC22CE59C000543047 /* InternationaliztionLocalizationVC.swift */,
+			);
+			path = "190706-InternationaliztionLocalization";
 			sourceTree = "<group>";
 		};
 		225CFD0D2181B1DC00D277F8 = {
@@ -225,6 +243,7 @@
 			children = (
 				225CFD202181B1DF00D277F8 /* Assets.xcassets */,
 				229C0B9A2182BFE700983A96 /* Font */,
+				22595AD922CE512C00543047 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -253,6 +272,7 @@
 				22FB35702227DA3E0020D8DB /* 190228-Menu */,
 				22F315E622290F17005336AF /* 190301-DecreaseFontSizeToTheSameSize */,
 				22C07CAD222BBC2500C60A3A /* 190303-ExpandingTableViewCellWithStackView */,
+				22595ADB22CE597200543047 /* 190706-InternationaliztionLocalization */,
 			);
 			path = DaijobuSample;
 			sourceTree = "<group>";
@@ -407,8 +427,9 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
+				ar,
 			);
 			mainGroup = 225CFD0D2181B1DC00D277F8;
 			productRefGroup = 225CFD172181B1DD00D277F8 /* Products */;
@@ -432,6 +453,8 @@
 				229C11AC2182CBCE00983A96 /* NaviPushCompletionVC1.xib in Resources */,
 				228C0470218460FD00AA26B4 /* NaviPushCompletionVC2.xib in Resources */,
 				2249575C218AC98000069909 /* NaviPushAlongsideTransitionCompletionVC.xib in Resources */,
+				22595AD722CE512C00543047 /* Localizable.strings in Resources */,
+				2230845E22CF47A50013C923 /* InternationaliztionLocalizationVC.xib in Resources */,
 				22C07CB1222BBC5F00C60A3A /* ExpandingTableViewCellWithStackViewVC.xib in Resources */,
 				225CFD212181B1DF00D277F8 /* Assets.xcassets in Resources */,
 				22FB35742227DA3E0020D8DB /* MenuVC.xib in Resources */,
@@ -468,6 +491,7 @@
 				229C11AB2182CBCE00983A96 /* NaviPushCompletionVC1.swift in Sources */,
 				2245E2BA222C3334008BFA5F /* ExpandingWithStackViewCell.swift in Sources */,
 				228C04772184743100AA26B4 /* NaviPushAlongsideTransitionCompletionVC.swift in Sources */,
+				22595ADE22CE59C000543047 /* InternationaliztionLocalizationVC.swift in Sources */,
 				225CFD1A2181B1DD00D277F8 /* AppDelegate.swift in Sources */,
 				2245E2BD222C3E7B008BFA5F /* ExpandingTableViewCellWithStackViewVC.swift in Sources */,
 				228C046F218460FD00AA26B4 /* NaviPushCompletionVC2.swift in Sources */,
@@ -507,6 +531,28 @@
 			targetProxy = 225CFD362181B1DF00D277F8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2230846022CF47A50013C923 /* InternationaliztionLocalizationVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2230846622CF487A0013C923 /* ar */,
+				2230846722CF48EB0013C923 /* Base */,
+				2230846922CF490F0013C923 /* en */,
+			);
+			name = InternationaliztionLocalizationVC.xib;
+			sourceTree = "<group>";
+		};
+		22595AD922CE512C00543047 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22595AD822CE512C00543047 /* en */,
+				22595ADA22CE514E00543047 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		225CFD3C2181B1DF00D277F8 /* Debug */ = {

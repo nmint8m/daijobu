@@ -23,4 +23,12 @@ extension String {
         let size = (self as NSString).size(withAttributes: [.font: font])
         return size.width
     }
+
+    /// Return localized string
+    ///
+    /// - Returns: Localized string
+    func localizedString() -> String {
+
+        return ""
+    }
 }
