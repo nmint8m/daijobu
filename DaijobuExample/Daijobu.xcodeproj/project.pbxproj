@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2230845E22CF47A50013C923 /* InternationaliztionLocalizationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2230846022CF47A50013C923 /* InternationaliztionLocalizationVC.xib */; };
+		2230846B22D09DE30013C923 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2230846A22D09DE30013C923 /* main.swift */; };
 		223A963C2182D5860013D262 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223A963B2182D5860013D262 /* UIViewControllerExt.swift */; };
 		223A96402182D6010013D262 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223A963F2182D6010013D262 /* ViewController.swift */; };
 		2245E2BA222C3334008BFA5F /* ExpandingWithStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2245E2B8222C3334008BFA5F /* ExpandingWithStackViewCell.swift */; };
@@ -58,6 +59,7 @@
 		2230846622CF487A0013C923 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InternationaliztionLocalizationVC.strings; sourceTree = "<group>"; };
 		2230846722CF48EB0013C923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/InternationaliztionLocalizationVC.xib; sourceTree = "<group>"; };
 		2230846922CF490F0013C923 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InternationaliztionLocalizationVC.strings; sourceTree = "<group>"; };
+		2230846A22D09DE30013C923 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		223A963B2182D5860013D262 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		223A963F2182D6010013D262 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2245E2B8222C3334008BFA5F /* ExpandingWithStackViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingWithStackViewCell.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		225CFD182181B1DD00D277F8 /* Daijobu */ = {
 			isa = PBXGroup;
 			children = (
+				2230846A22D09DE30013C923 /* main.swift */,
 				225CFD192181B1DD00D277F8 /* AppDelegate.swift */,
 				229C119F2182C8DB00983A96 /* DaijobuSample */,
 				223A96392182D5410013D262 /* Library */,
@@ -493,6 +496,7 @@
 				228C04772184743100AA26B4 /* NaviPushAlongsideTransitionCompletionVC.swift in Sources */,
 				22595ADE22CE59C000543047 /* InternationaliztionLocalizationVC.swift in Sources */,
 				225CFD1A2181B1DD00D277F8 /* AppDelegate.swift in Sources */,
+				2230846B22D09DE30013C923 /* main.swift in Sources */,
 				2245E2BD222C3E7B008BFA5F /* ExpandingTableViewCellWithStackViewVC.swift in Sources */,
 				228C046F218460FD00AA26B4 /* NaviPushCompletionVC2.swift in Sources */,
 				22F315EB22290FA9005336AF /* DecreaseFontSizeOfLabelsVC.swift in Sources */,

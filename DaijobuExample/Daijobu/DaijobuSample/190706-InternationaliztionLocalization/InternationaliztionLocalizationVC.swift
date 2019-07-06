@@ -13,64 +13,87 @@ final class InternationaliztionLocalizationVC: ViewController {
     // MARK: - IBOutlet
 
     // MARK: - Properties
-    private var currentLanguageCode: String = ""
 
-    private var currentLanguage: Language {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+    @IBAction func languageButtonTouchUpInside(_ sender: UIButton) {
+        guard let buttonType = ButtonType(rawValue: sender.tag) else { return }
+        let newLanguage: Language
+        switch buttonType {
+        case .english:
+            newLanguage = .english
+        case .arabic:
+            newLanguage = .arabic
+        }
+        Language.currentAppleLanguage = newLanguage
+        let alert = UIAlertController(title: "Do you want to change language to \(newLanguage.name)?",
+                                      message: "You need to restart app to appl",
+                                      preferredStyle: .alert)
+        let restart = UIAlertAction(title: "Restart app", style: .default) { _ in
+            exit(0)
+        }
+        let cancel = UIAlertAction(title: "Don't apply", style: .cancel, handler: nil)
+        alert.addAction(restart)
+        alert.addAction(cancel)
+        present(alert,
+                animated: true,
+                completion: nil)
+    }
+}
+
+extension InternationaliztionLocalizationVC {
+
+    enum ButtonType: Int {
+        case english
+        case arabic
+    }
+}
+
+enum Language: String, CaseIterable {
+    case english = "en"
+    case arabic = "ar"
+
+    var name: String {
+        switch self {
+        case .english: return "English"
+        case .arabic: return "Arabic"
+        }
+    }
+
+    static let count: Int = {
+        return Language.allCases.count
+    }()
+
+    static let system: Language = {
+        guard let languageCode = Locale.preferredLanguages.first?.prefix(2),
+            let language = Language(rawValue: String(languageCode)) else
+        {
+            return Language.english
+        }
+        return language
+    }()
+
+    static var currentAppleLanguage: Language {
+
         get {
-            guard let language = Language(rawValue: currentLanguageCode) else {
+            let kAppLanguage = "AppleLanguages"
+            let ud = UserDefaults.standard
+
+            guard let languageCode = ud.string(forKey: kAppLanguage),
+                let language = Language(rawValue: languageCode) else {
                     return Language.system
             }
             return language
         }
 
         set {
-            currentLanguageCode = newValue.rawValue
+            let kAppLanguage = "AppleLanguages"
+            let ud = UserDefaults.standard
+
+            ud.set([newValue.rawValue], forKey: kAppLanguage)
+            ud.synchronize()
         }
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
-
-extension InternationaliztionLocalizationVC {
-
-    enum Language: String, CaseIterable {
-        case english = "en"
-        case arabic = "ar"
-
-        var name: String {
-            switch self {
-            case .english: return "English"
-            case .arabic: return "Arabic"
-            }
-        }
-
-        static let count: Int = {
-            return Language.allCases.count
-        }()
-
-        static let system: Language = {
-            guard let languageCode = Locale.preferredLanguages.first?.prefix(2),
-                let language = Language(rawValue: String(languageCode)) else
-                {
-                    return Language.english
-            }
-            return language
-        }()
     }
 }
